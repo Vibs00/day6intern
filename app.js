@@ -13,12 +13,12 @@ const numbers = [5, 7, 2];
         // console.log(numbers);
 
 //ques2
-area_of_circle = (radius = 1)=>((Math.PI)*Math.pow(radius,2));
+let area_of_circle = (radius = 1)=>((Math.PI)*Math.pow(radius,2));
 
 /*
  *task 2
  */
-average = (...n)=>{
+let average = (...n)=>{
     let len = n.length;
     let sum = 0;
     for(let i of n){
@@ -67,3 +67,7 @@ const wolf = new Animal("howl");
 
    const human = new Animal();
    console.log(human.getVoice());   // should return 'talk' as default value
+
+   import {Animals} from "./animal.js";
+   const lion = new Animals("roar"); 
+    console.log(lion);  
